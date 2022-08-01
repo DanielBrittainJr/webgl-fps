@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 2007720061}
+  gravity: -9.81
   groundCheck: {fileID: 341014854}
   groundDistance: 0.4
   groundMask:
