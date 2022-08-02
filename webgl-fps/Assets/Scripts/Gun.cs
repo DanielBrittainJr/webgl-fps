@@ -14,7 +14,7 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetMouseButtonDown(0))
         {
             Shoot();
 
@@ -28,7 +28,9 @@ public class Gun : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit,range))
         {
             Debug.Log(hit.transform.name);
+
             Target target = hit.transform.GetComponent<Target>();
+
             if(target != null)
             {
                 target.TakeDamage(damage);

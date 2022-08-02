@@ -6,18 +6,26 @@ public class EnemyManager : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public GameObject enemyPrefab;
+
+    [SerializeField] private float spawnTime;
+    [SerializeField] private float spawnDelay;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        for(int spawnCount =0;spawnCount <=10; spawnCount++)
+        {
+            SpawnNewEnemy();
+        }    
         
-        SpawnNewEnemy();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
+
 
     void SpawnNewEnemy()
     {

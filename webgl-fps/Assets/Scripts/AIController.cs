@@ -5,16 +5,17 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
-    [SerializeField] private Transform movePositionTransform;
+    private Transform movePositionTransform;
     private NavMeshAgent navMeshAgent;
     private void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();    
-        
-        
+        movePositionTransform = GameObject.Find("FPSPlayer").transform;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
+
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         navMeshAgent.destination =  movePositionTransform.position;
 
