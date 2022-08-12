@@ -5,3 +5,6 @@ Using github actions and gameCI to auto build on every commit and upload to gith
 
 if you are looking for the code navigate to the below in the repo
 webgl-fps/webgl-fps/Assets/Scripts/
+
+
+Try the game here: https://danielbrittainjr.github.io/webgl-fps/ 
