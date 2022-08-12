@@ -201,7 +201,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 876586121}
   - {fileID: 766248898}
-  enemyPrefab: {fileID: 6159688040092659657, guid: 99da0f5af2caafe4b88a3f25d8ff96c2, type: 3}
+  enemyPrefab: {fileID: 8204843141912366384, guid: d6740fd1df364e942909c397b5189a77, type: 3}
   spawnTime: 0
   spawnDelay: 0
 --- !u!1 &295312347
